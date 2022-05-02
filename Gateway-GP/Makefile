@@ -37,7 +37,7 @@ ifneq ($(LINKER_SCRIPT),)
 ifeq ($(TOOLCHAIN_SUBTYPE),iar)
 LDFLAGS += --config $(LINKER_SCRIPT)
 else
-LDFLAGS += -T$(LINKER_SCRIPT)
+LDFLAGS += -T$(LINKER_SCRIPT) 
 endif
 
 endif
@@ -76,7 +76,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := Gateway-GP.cpp list_ports_linux.cpp serial.cpp unix.cc
+SOURCEFILES := Gateway-GP.cpp list_ports_linux.cpp LoRaModule.cpp serial.cpp unix.cc
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 

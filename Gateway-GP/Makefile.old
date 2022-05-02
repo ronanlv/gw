@@ -76,7 +76,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := Gateway-GP.cpp
+SOURCEFILES := Gateway-GP.cpp list_ports_linux.cpp LoRaModule.cpp serial.cpp uart.cpp unix.cc
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 

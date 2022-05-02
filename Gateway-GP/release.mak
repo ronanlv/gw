@@ -23,7 +23,7 @@ LINUX_PACKAGES :=
 CFLAGS := -ggdb -ffunction-sections -O3
 CXXFLAGS := -ggdb -ffunction-sections -O3
 ASFLAGS := 
-LDFLAGS := -Wl,-gc-sections
+LDFLAGS := -Wl,-gc-sections -lpigpio -lrt
 COMMONFLAGS := 
 LINKER_SCRIPT := 
 

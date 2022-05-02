@@ -44,7 +44,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewaya.local\0000\include\c++\10;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewaya.local\0000\include\aarch64-linux-gnu\c++\10;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewaya.local\0000\include\c++\10\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewaya.local\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewaya.local\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewaya.local\0000\include\aarch64-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewaya.local\0000\include;$(ProjectDir);$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewayA.local\0000\include\c++\10;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewayA.local\0000\include\aarch64-linux-gnu\c++\10;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewayA.local\0000\include\c++\10\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewayA.local\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewayA.local\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewayA.local\0000\include\aarch64-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\gatewayA.local\0000\include;$(ProjectDir);$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
@@ -70,6 +70,7 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="LoRaModule.h" />
     <ClInclude Include="serial.h" />
     <ClInclude Include="unix.h" />
     <ClInclude Include="v8stdint.h" />
@@ -80,6 +81,7 @@
   <ItemGroup>
     <ClCompile Include="Gateway-GP.cpp" />
     <ClCompile Include="list_ports_linux.cpp" />
+    <ClCompile Include="LoRaModule.cpp" />
     <ClCompile Include="serial.cpp" />
     <ClCompile Include="unix.cc" />
     <None Include="Makefile" />

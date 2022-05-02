@@ -15,15 +15,15 @@ OBJCOPY := objcopy
 PREPROCESSOR_MACROS := DEBUG=1
 INCLUDE_DIRS := .
 LIBRARY_DIRS := 
-LIBRARY_NAMES := 
+LIBRARY_NAMES := pigpio
 ADDITIONAL_LINKER_INPUTS := 
 MACOS_FRAMEWORKS := 
 LINUX_PACKAGES := 
 
-CFLAGS := -ggdb -ffunction-sections -O0
-CXXFLAGS := -ggdb -ffunction-sections -O0
+CFLAGS := -ggdb -ffunction-sections
+CXXFLAGS := -ggdb -ffunction-sections
 ASFLAGS := 
-LDFLAGS := -Wl,-gc-sections
+LDFLAGS := -pthread -lpigpio -lrt
 COMMONFLAGS := 
 LINKER_SCRIPT := 
 

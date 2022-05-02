@@ -643,6 +643,9 @@
 #ifndef __SIZE_TYPE__
 #define __SIZE_TYPE__ long unsigned int
 #endif
+#ifndef DEBUG
+#define DEBUG 1
+#endif
 #ifndef __FLT64X_DIG__
 #define __FLT64X_DIG__ 33
 #endif
@@ -1177,12 +1180,10 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
-#ifndef DEBUG
-#define DEBUG 1
-#endif
 #endif
 
 // --- Include directories begin --- //
+//.
 ///usr/include/c++/10
 ///usr/include/aarch64-linux-gnu/c++/10
 ///usr/include/c++/10/backward
